@@ -1,0 +1,62 @@
+body {
+    /*background-image: url("./Blue_Bkgd.jpg");*/
+    background-size: 100%;
+}
+
+.parent {
+    display: grid;
+    font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
+    margin-top: 1%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 5px;
+    font-size: 300%;
+    opacity: 1;
+    z-index: -1;
+}   
+    
+.left { grid-area: 1 / 1 / 2 / 2; }
+.right { grid-area: 1 / 2 / 2 / 3; }
+
+section {
+    background-color: white;
+    border: 1px solid black;
+    margin: 3%;
+    padding: 1%;
+}
+
+section header {
+    color: #5c1e67;
+    font-weight: bolder;
+    font-size: 125%;
+    text-align: center;
+}
+
+.col-header {
+    font-weight: bolder;
+}
+
+.table-container-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    text-align: center;
+    row-gap: 10%;
+}
+
+.table-container-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    text-align: center;
+    row-gap: 10%;
+}
+
+.full-width {
+    font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
+    font-size: 300%;
+    opacity: 1;
+    z-index: -1;
+}
+

@@ -1,0 +1,48 @@
+<html>
+
+<head>
+  <title>Digital Display</title>
+  <link rel="stylesheet" href="./Index.css">
+</head>
+
+<body><div id="app">
+<button v-on:click="Query_All();">Refresh</button>
+{{ fetching }}
+
+  <div class="parent">
+
+      <div class="left">
+      <section id="Comm">
+          <display-list v-bind:list="jsonCovidCommunique">
+      </section>
+      <section id="Contacts">
+          <table-3-col v-bind:table="jsonContacts">
+      </section>
+
+      </div><!--left-->
+
+      <div class="right">
+          <section id="IQ">
+              <display-list v-bind:list="jsonIQ">
+          </section>
+          <section id="Committee">
+              <table-2-col v-bind:table="jsonPatientsOnCommittees">
+          </section>            
+      </div><!--right-->
+
+  </div><!--parent-->
+
+  <div class="full-width">
+      <section id="VAX" >
+          <table-3-col v-bind:table="jsonVaxInfo">
+      </section>
+  </div>
+
+</div><!--app--></body>
+
+<script src="./js/signalr.js"></script>
+<!--script src="./js/vue.js"></script-->
+<script src="./js/vue.min.js"></script>
+<script src="./js/Index.js"></script>
+
+</html>
